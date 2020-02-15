@@ -12,13 +12,13 @@ namespace Lesson11_01.IAC.test
         public void GenerateReportAircraftInEuropeShouldReturnListWithReportItems()
         {
             // Assign
-            ReportGenerator reportGenerator = new ReportGenerator(
+            ReportGeneratorcs reportGenerator = new ReportGeneratorcs(
                 new AircraftRepository(),
                 new AircraftModelRepository(),
-                new CompanyRepository(),
-                new CountryRepository());
+                new CountryRepository(),
+                new CompanyRepository());
 
-            // Act
+            //// Act
             var report = reportGenerator.GenerateReportAircraftInEurope();
 
             // Assert
